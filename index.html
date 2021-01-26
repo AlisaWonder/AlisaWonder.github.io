@@ -3,12 +3,12 @@
 <head>
  <meta charset="utf-8">
  <title>ИББС</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="overflow-x:hidden;">
     <header id ="header" class = "header">
       <div class="container">
         <div class = "nav">
@@ -31,9 +31,9 @@
            </li>
          </ul>
 
-         <a href="mailto:infoguard.uav@gmail.com?subject=Тема" class = "email">infoguard.uav@gmail.com</a>
+         <a href="mailto:infoguard.uav@gmail.com?subject=Тема" class = "email1">infoguard.uav@gmail.com</a>
          
-          <a title="Telegram" href="https://telegram.me/infoguard_uav" target="_blank"><img src="img/telegram1.svg" alt = "telegram" class = "telegram">
+          <a title="Telegram" href="https://telegram.me/infoguard_uav" target="_blank"><img src="img/telegram1.svg" alt = "telegram" class = "telegram1">
 
           </a> 
 
@@ -57,11 +57,9 @@
         <h2>3 шага до взлета!</h2>
         <div class = "description">
           <div class="desc-left">
-            <div>
-            <img src="img/verify.svg" alt = "verify" class = "verify">
-          </div>
-           <div >
-            <h3> Учет </h3>
+            <div class = "header-desc-left">
+             <img src="img/verify.svg" alt = "verify" class = "verify">
+             <h3> Учет </h3>
           </div>
 
               <ul>
@@ -72,8 +70,10 @@
           </div>
           
           <div class="desc-center">
-            <img src="img/policeman.svg" alt = "policeman" class = "policeman">
-          <h3>Допуск</h3>
+            <div class = "header-desc-center">
+              <img src="img/policeman.svg" alt = "policeman" class = "policeman">
+              <h3>Допуск</h3>
+           </div>
           <ul>
                 <li>Разрешение на использование воздушного пространства.</li>
                 <li>Разрешение на аэрофотосъемку от органов государственной безопасности.</li>
@@ -82,8 +82,10 @@
           </div>  
 
           <div class="desc-right">
+            <div class = "header-desc-right">
             <img src="img/send.svg" alt = "send" class = "send">
             <h3> Полет</h3>
+          </div>
              <ul>
                 <li>Решайте свои ежедневные задачи с собственным отделом применения беспилотных летательных аппаратом, или закажите наши услуги в области аэрофотовидеосъемки.</li>
               </ul>
@@ -99,15 +101,15 @@
     <section id = "facts" class = "facts">
       <div class = " container">
         <div class = "fact1">
-          <img src="img/distance.svg" alt = "distance" class = "distance">
+          <img src="img/distance.svg" alt = "distance" class = "distance" width ="80px" height = "80px">
           <p><b>72 000 километров суммарно пролетают наши экипажи за 1 месяц над территорией СНГ.</b></p>
         </div>
         <div class = "fact2">
-           <img src="img/gallery.svg" alt= "gallery" class = "gallery">
+           <img src="img/gallery.svg" alt= "gallery" class = "gallery" width ="80px" height = "80px">
           <p><b>2 562 000 фото данных земной поверхности за неделю.</b></p>
         </div>
         <div class = "fact3">
-          <img src="img/unmanned.svg" alt = "unmanned" class = "unmanned">
+          <img src="img/unmanned.svg" alt = "unmanned" class = "unmanned" width ="80px" height = "80px">
           <p><b>7122 БЛА поднимается каждый день в воздух.</b></p>
         </div>
 
@@ -116,7 +118,7 @@
       </div>
     </section>
     <section id = "aboutus" class = "aboutus">
-      <div class = "container">
+      <div class = "container aboutus1">
         <h2>О компании</h2>
         <p>ИББС -  это команда специалистов в области использования беспилотных авиационных систем:  ведения воздушной разведки, поиска целей и  сопровождений объектов с воздуха. </p> 
 <p>Мы здесь, чтобы облегчить вам процесс внедрения беспилотников в вашу организацию.</p>
@@ -131,7 +133,7 @@
     </section>
 
     <section id = "ourmission" class = " ourmission">
-      <div class = "container">
+      <div class = "container mission">
         <h2>Наша миссия</h2>
         <p> Главной задачей ставим перед собой внедрение беспилотных систем в повседневную жизнь предприятий и государства, с учетом всех действующих правил и инструкций.</p>
         <blockquote><b>
@@ -195,15 +197,8 @@
 </form>
 
      </div>
-     <form action="send.php" method="post">
-Ваше имя <input type="text" name="first_name"><br>
-Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-Номер телефона: <input type="text" name="phone"><br>
-Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-<input type="submit" name="submit" value="Отправить">
-</form>
-     
-     
+
+
      
     </section>
 
@@ -211,12 +206,14 @@ Email: <input type="text" name="email" required placeholder="Обязатель�
       <div class = "container">
 
  <img src = "img/Logo.svg" alt = "ИББС" class ="logo">
+
  <a title="Telegram" href="https://telegram.me/infoguard_uav" target="_blank"><img src="img/telegram1.svg" alt = "telegram" class = "telegram">
 </a> 
 <a title="VK" href="https://m.vk.com/infoguard_uav" target="_blank"><img src="img/vk.svg" alt = "VK" class = "vk"/></a>
 
 <a title="Instagram" href="https://m.vk.com/infoguard_uav" target="_blank"><img src="img/instagram.svg" alt = "instagram" class = "instagram"/></a>
 <a title="Mail" href="https://m.vk.com/infoguard_uav" target="_blank"><img src="img/email.svg" alt = "Email" class = "email"/></a>
+<a href="mailto:infoguard.uav@gmail.com?subject=Тема" class = "email1">infoguard.uav@gmail.com</a>
   <p><a href = "#"> Политика конфиденциальности </a></p>
  <p> ©  ИББС 2021 Все права защищены</p>
 
