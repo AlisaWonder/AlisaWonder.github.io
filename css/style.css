@@ -21,7 +21,9 @@ h2 {
 }
 
 
-
+p {
+     max-width: 90%
+}
 
 ul, li {
     display: block;
