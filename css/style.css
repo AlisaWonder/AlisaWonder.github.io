@@ -423,6 +423,10 @@ ul {
 
 
 @media screen and (max-width: 767px) {
+     
+     body {
+          overflow-x: hidden;
+     }
     .container { 
     width: 540px;
     padding-left: 15px;
