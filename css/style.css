@@ -494,7 +494,7 @@ select {
 
 @media screen and (max-width: 510px) {
     .container { 
-    width: 100%; 
+    width: 90%; 
     
     }
 
